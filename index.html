@@ -5,7 +5,8 @@
     <title>Functional Calculator</title>
 </head>
 <body>
-
+    
+   <h2 id="result"></h2>
     <script>
 
 const operator= prompt("\n Enter operator \n     +        \n       -      \n        /                  \n      * \n      %");
@@ -34,7 +35,7 @@ const num2= parseFloat(prompt("\n Enter second number"));
  
  console.log(result);
  
- 
+ document.getElementById("result").innerHTML="THE RESULT IS= " + result;
 </script>
   
  </body>
