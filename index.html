@@ -3,7 +3,39 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Functional Calculator</title>
-    <script src="java.js" defer></script>
-  </head>
-  <body></body>
+</head>
+<body>
+
+    <script>
+
+const operator= prompt("\n Enter operator \n     +        \n       -      \n        /                  \n      * \n      %");
+const num1= parseFloat(prompt("\n Enter first number"));
+const num2= parseFloat(prompt("\n Enter second number"));
+
+ let result;
+ 
+ if(operator == "+") {
+   result= num1 + num2;
+   
+ }else if (operator == "-") {
+   result=  num1 - num2;
+   
+ }else if (operator == "/") {
+   result= num1 / num2;
+   
+ }else if (operator == "*") {
+   result= num1 * num2;
+   
+ }else{
+   result= num1 % num2;
+ }
+ 
+ alert(result);
+ 
+ console.log(result);
+ 
+ 
+</script>
+  
+ </body>
 </html>
